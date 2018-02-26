@@ -1,0 +1,4 @@
+vhdl xil_defaultlib "../../../ipstatic/hdl/ip/top_ap_fadd_6_full_dsp_32.vhd" 
+vhdl xil_defaultlib "../../../../gcn_fpga_hw.srcs/sources_1/ip/procUnit/sim/procUnit.vhd" 
+
+nosort

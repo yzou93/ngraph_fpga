@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7k325t_0" gui_info="dashboard1=hw_ila_1[xc7k325t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_1/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7k325t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/KC705_Gen2x8If128.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="hw_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="chnl_user_app/perf_measure/edge_mon/clk_counter[63:0]" gui_info=""/>
+    <Object name="chnl_user_app/perf_measure/edge_mon/monitor_counter[63:0]" gui_info=""/>
+    <Object name="chnl_user_app/perf_measure/msg_mon/clk_counter[63:0]" gui_info=""/>
+    <Object name="chnl_user_app/perf_measure/msg_mon/monitor_counter[63:0]" gui_info=""/>
+    <Object name="chnl_user_app/perf_measure/node_mon/clk_counter[63:0]" gui_info="Capture Setup=0"/>
+    <Object name="chnl_user_app/perf_measure/node_mon/monitor_counter[63:0]" gui_info="Trigger Setup=0"/>
+    <Object name="chnl_user_app/procUnitWrapper/c_empty" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/c_rd" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/dst_rd" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/metadata_empty" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/metadata_rd" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/msg_in_rd" gui_info="Capture Setup=0"/>
+    <Object name="chnl_user_app/procUnitWrapper/msg_out_wr" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/node_in_empty" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/node_in_rd" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/src_rd" gui_info=""/>
+    <Object name="chnl_user_app/procUnitWrapper/wt_addr[14:0]" gui_info=""/>
+    <Object name="u_ila_0_wt_en" gui_info=""/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/clk_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/edge_mon/monitor_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/clk_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/msg_mon/monitor_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;u149999"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/clk_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="neq64&apos;u0"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="neq64&apos;u0"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[63]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[62]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[61]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[60]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[59]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[58]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[57]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[56]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[55]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[54]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[53]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[52]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[51]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[50]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[49]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[48]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[47]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[46]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[45]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[44]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[43]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[42]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[41]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[40]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[39]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[38]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[37]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[36]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[35]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[34]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[33]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[32]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[31]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[30]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[29]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[28]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[27]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[26]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[25]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[24]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[23]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[22]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[21]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[20]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[19]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[18]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[17]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[16]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[15]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[14]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[13]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[12]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[11]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[10]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[9]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[8]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[7]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[6]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[5]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[4]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[3]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[2]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[1]"/>
+        <net name="chnl_user_app/perf_measure/node_mon/monitor_counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe10[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/c_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/c_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/c_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe6[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/dst_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/dst_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe14[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/dst_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe7[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[63]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[62]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[61]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[60]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[59]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[58]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[57]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[56]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[55]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[54]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[53]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[52]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[51]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[50]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[49]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[48]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[47]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[46]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[45]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[44]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[43]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[42]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[41]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[40]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[39]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[38]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[37]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[36]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[35]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[34]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[33]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[32]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/edge_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe15[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/edge_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe5[63:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[63]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[62]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[61]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[60]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[59]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[58]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[57]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[56]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[55]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[54]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[53]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[52]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[51]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[50]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[49]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[48]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[47]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[46]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[45]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[44]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[43]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[42]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[41]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[40]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[39]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[38]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[37]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[36]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[35]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[34]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[33]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[32]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/metadata_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe16[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/metadata_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe17[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/metadata_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[31]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_in_dout[31]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe18[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_in_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe19[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_in_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_din[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe20[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_full"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe21[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/msg_out_wr"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe22[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/node_in_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe23[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/node_in_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/node_out_din[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe24[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/node_out_full"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe25[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/node_out_wr"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe26[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/src_empty"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe27[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/src_rd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq15&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq15&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe9[14:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq15&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe8[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[31]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[30]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[29]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[28]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[27]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[26]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[25]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[24]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[23]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[22]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[21]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[20]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[19]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[18]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[17]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[16]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[15]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[14]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[13]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[12]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[11]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[10]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[9]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[8]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[7]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[6]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[5]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[4]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[3]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[2]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[1]"/>
+        <net name="chnl_user_app/procUnitWrapper/wt_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq31&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq31&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[30:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq31&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="u_ila_0_msg_in_dout[30]"/>
+        <net name="u_ila_0_msg_in_dout[29]"/>
+        <net name="u_ila_0_msg_in_dout[28]"/>
+        <net name="u_ila_0_msg_in_dout[27]"/>
+        <net name="u_ila_0_msg_in_dout[26]"/>
+        <net name="u_ila_0_msg_in_dout[25]"/>
+        <net name="u_ila_0_msg_in_dout[24]"/>
+        <net name="u_ila_0_msg_in_dout[23]"/>
+        <net name="u_ila_0_msg_in_dout[22]"/>
+        <net name="u_ila_0_msg_in_dout[21]"/>
+        <net name="u_ila_0_msg_in_dout[20]"/>
+        <net name="u_ila_0_msg_in_dout[19]"/>
+        <net name="u_ila_0_msg_in_dout[18]"/>
+        <net name="u_ila_0_msg_in_dout[17]"/>
+        <net name="u_ila_0_msg_in_dout[16]"/>
+        <net name="u_ila_0_msg_in_dout[15]"/>
+        <net name="u_ila_0_msg_in_dout[14]"/>
+        <net name="u_ila_0_msg_in_dout[13]"/>
+        <net name="u_ila_0_msg_in_dout[12]"/>
+        <net name="u_ila_0_msg_in_dout[11]"/>
+        <net name="u_ila_0_msg_in_dout[10]"/>
+        <net name="u_ila_0_msg_in_dout[9]"/>
+        <net name="u_ila_0_msg_in_dout[8]"/>
+        <net name="u_ila_0_msg_in_dout[7]"/>
+        <net name="u_ila_0_msg_in_dout[6]"/>
+        <net name="u_ila_0_msg_in_dout[5]"/>
+        <net name="u_ila_0_msg_in_dout[4]"/>
+        <net name="u_ila_0_msg_in_dout[3]"/>
+        <net name="u_ila_0_msg_in_dout[2]"/>
+        <net name="u_ila_0_msg_in_dout[1]"/>
+        <net name="u_ila_0_msg_in_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="u_ila_0_node_in_dout[31]"/>
+        <net name="u_ila_0_node_in_dout[30]"/>
+        <net name="u_ila_0_node_in_dout[29]"/>
+        <net name="u_ila_0_node_in_dout[28]"/>
+        <net name="u_ila_0_node_in_dout[27]"/>
+        <net name="u_ila_0_node_in_dout[26]"/>
+        <net name="u_ila_0_node_in_dout[25]"/>
+        <net name="u_ila_0_node_in_dout[24]"/>
+        <net name="u_ila_0_node_in_dout[23]"/>
+        <net name="u_ila_0_node_in_dout[22]"/>
+        <net name="u_ila_0_node_in_dout[21]"/>
+        <net name="u_ila_0_node_in_dout[20]"/>
+        <net name="u_ila_0_node_in_dout[19]"/>
+        <net name="u_ila_0_node_in_dout[18]"/>
+        <net name="u_ila_0_node_in_dout[17]"/>
+        <net name="u_ila_0_node_in_dout[16]"/>
+        <net name="u_ila_0_node_in_dout[15]"/>
+        <net name="u_ila_0_node_in_dout[14]"/>
+        <net name="u_ila_0_node_in_dout[13]"/>
+        <net name="u_ila_0_node_in_dout[12]"/>
+        <net name="u_ila_0_node_in_dout[11]"/>
+        <net name="u_ila_0_node_in_dout[10]"/>
+        <net name="u_ila_0_node_in_dout[9]"/>
+        <net name="u_ila_0_node_in_dout[8]"/>
+        <net name="u_ila_0_node_in_dout[7]"/>
+        <net name="u_ila_0_node_in_dout[6]"/>
+        <net name="u_ila_0_node_in_dout[5]"/>
+        <net name="u_ila_0_node_in_dout[4]"/>
+        <net name="u_ila_0_node_in_dout[3]"/>
+        <net name="u_ila_0_node_in_dout[2]"/>
+        <net name="u_ila_0_node_in_dout[1]"/>
+        <net name="u_ila_0_node_in_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="u_ila_0_src_dout[11]"/>
+        <net name="u_ila_0_src_dout[10]"/>
+        <net name="u_ila_0_src_dout[9]"/>
+        <net name="u_ila_0_src_dout[8]"/>
+        <net name="u_ila_0_src_dout[7]"/>
+        <net name="u_ila_0_src_dout[6]"/>
+        <net name="u_ila_0_src_dout[5]"/>
+        <net name="u_ila_0_src_dout[4]"/>
+        <net name="u_ila_0_src_dout[3]"/>
+        <net name="u_ila_0_src_dout[2]"/>
+        <net name="u_ila_0_src_dout[1]"/>
+        <net name="u_ila_0_src_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe28[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="u_ila_0_wt_en"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dst_stream_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1519099646">
+  <File Type="PA-TCL" Name="dst_stream.tcl"/>
+  <File Type="RDS-RDS" Name="dst_stream.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="dst_stream_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="dst_stream_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dst_stream_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dst_stream.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dst_stream_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="dst_stream_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dst_stream">
+    <File Path="$PSRCDIR/sources_1/ip/dst_stream/dst_stream.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dst_stream"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dst_stream">
+    <File Path="$PSRCDIR/sources_1/ip/dst_stream/dst_stream.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dst_stream"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

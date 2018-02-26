@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="top" xd:componentRef="top" xd:initiationInterval="x" xd:clockPeriod="4.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="node_in_strm" xd:originalName="node_in_strm" xd:direction="in" xd:interfaceRef="node_in_strm_V" xd:busTypeRef="acc_fifo" xd:dataWidth="32"/>
+  <xd:arg xd:name="edge_strm.src" xd:originalName="edge_strm" xd:direction="in" xd:interfaceRef="edge_strm_V_src_V" xd:busTypeRef="acc_fifo" xd:dataWidth="12"/>
+  <xd:arg xd:name="edge_strm.dst" xd:originalName="edge_strm" xd:direction="in" xd:interfaceRef="edge_strm_V_dst_V" xd:busTypeRef="acc_fifo" xd:dataWidth="12"/>
+  <xd:arg xd:name="edge_strm.c" xd:originalName="edge_strm" xd:direction="in" xd:interfaceRef="edge_strm_V_c" xd:busTypeRef="acc_fifo" xd:dataWidth="32"/>
+  <xd:arg xd:name="metadata_strm" xd:originalName="metadata_strm" xd:direction="in" xd:interfaceRef="metadata_strm_V" xd:busTypeRef="acc_fifo" xd:dataWidth="64"/>
+  <xd:arg xd:name="node_out_strm" xd:originalName="node_out_strm" xd:direction="out" xd:interfaceRef="node_out_strm_V" xd:busTypeRef="acc_fifo" xd:dataWidth="32"/>
+  <xd:arg xd:name="wt_q0" xd:originalName="wt_q0" xd:direction="in" xd:interfaceRef="wt_q0" xd:busTypeRef="ap_memory" xd:arraySize="22928" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="580" xd:FF="639" xd:BRAM="129" xd:DSP="2"/>
+</xd:acceleratorMap>

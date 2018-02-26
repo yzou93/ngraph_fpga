@@ -1,0 +1,5 @@
+verilog xil_defaultlib "../../../../gcn_fpga_hw.srcs/sources_1/ip/node_out_strm/sim/node_out_strm.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

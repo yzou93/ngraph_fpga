@@ -1,0 +1,148 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="node_in_strm" positionalBoolean="4"/>
+                <option name="depth" value="3880564"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="edge_strm" positionalBoolean="4"/>
+                <option name="depth" value="13264"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="metadata_strm" positionalBoolean="4"/>
+                <option name="depth" value="14450"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="msg_out_strm" positionalBoolean="4"/>
+                <option name="depth" value="225488"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="msg_in_strm" positionalBoolean="4"/>
+                <option name="depth" value="225488"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="node_out_strm" positionalBoolean="4"/>
+                <option name="depth" value="43328"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="variable" value="wt" positionalBoolean="4"/>
+                <option name="core" value="ROM_1P"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_memory" value="" positionalBoolean="mode"/>
+                <option name="depth" value="22928"/>
+                <option name="port" value="wt" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="node_load" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="node_in_strm" positionalBoolean="4"/>
+                <option name="depth" value="45856"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="edge_proc" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_memory" value="" positionalBoolean="mode"/>
+                <option name="port" value="node_bram" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="edge_proc" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_memory" value="" positionalBoolean="mode"/>
+                <option name="port" value="wt" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="mat_mult" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_memory" value="" positionalBoolean="mode"/>
+                <option name="port" value="node_bram" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="mat_mult" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_memory" value="" positionalBoolean="mode"/>
+                <option name="port" value="wt" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="edge_list" positionalBoolean="4"/>
+                <option name="depth" value="13264"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="node_in_list" positionalBoolean="4"/>
+                <option name="depth" value="3880564"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="node_out_list" positionalBoolean="4"/>
+                <option name="depth" value="43328"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="msg_in_list" positionalBoolean="4"/>
+                <option name="depth" value="225488"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="msg_out_list" positionalBoolean="4"/>
+                <option name="depth" value="225488"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="main" label="" functionLabel="">
+            <pragma name="STREAM">
+                <option name="variable" value="metadata_strm" positionalBoolean="4"/>
+                <option name="depth" value="14450"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="top" label="clear_inner" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="node_store" label="node_store_inner" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="node_load" label="src_load_inner" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="top" label="scatter_outer" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="top" label="gather_outer" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

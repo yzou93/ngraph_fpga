@@ -1,0 +1,151 @@
+
+*** Running vivado
+    with args -log PCIeGen2x8If128.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIeGen2x8If128.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source PCIeGen2x8If128.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1123.531 ; gain = 189.086 ; free physical = 896 ; free virtual = 8775
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/synth/PCIeGen2x8If128.v:66]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie2_top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie2_top.v:59]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_core_top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_core_top.v:65]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_single' [/opt/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:99]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_single' (1#1) [/opt/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:99]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_top.v:62]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_top.v:68]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_rx' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx.v:70]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_rx_pipeline' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_rx_pipeline' (2#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_rx_null_gen' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_rx_null_gen' (3#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_rx' (4#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_rx.v:70]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_tx' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx.v:70]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_tx_thrtl_ctl' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_tx_thrtl_ctl' (5#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_axi_basic_tx_pipeline' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_tx_pipeline' (6#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_tx' (7#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_tx.v:70]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_axi_basic_top' (8#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_axi_basic_top.v:68]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_7x' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_7x.v:63]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_bram_top_7x' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_bram_top_7x.v:72]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_brams_7x' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_brams_7x.v:65]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_bram_7x' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_bram_7x.v:63]
+INFO: [Synth 8-638] synthesizing module 'BRAM_SDP_MACRO' [/opt/Xilinx/Vivado/2016.4/data/verilog/src/unimacro/BRAM_SDP_MACRO.v:34]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1' (9#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_SDP_MACRO' (10#1) [/opt/Xilinx/Vivado/2016.4/data/verilog/src/unimacro/BRAM_SDP_MACRO.v:34]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_bram_7x' (11#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_bram_7x.v:63]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_brams_7x' (12#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_brams_7x.v:65]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_bram_top_7x' (13#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_bram_top_7x.v:72]
+INFO: [Synth 8-638] synthesizing module 'PCIE_2_1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:28000]
+INFO: [Synth 8-256] done synthesizing module 'PCIE_2_1' (14#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:28000]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_7x' (15#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_7x.v:63]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_pipe_pipeline' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_pipe_lane' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_lane.v:63]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_pipe_lane' (16#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_lane.v:63]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pcie_pipe_misc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_misc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_pipe_misc' (17#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_misc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_pipe_pipeline' (18#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie_top' (19#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie_top.v:62]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gt_top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_top.v:62]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gt_rx_valid_filter_7x' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gt_rx_valid_filter_7x' (20#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_wrapper' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_wrapper.v:156]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_clock' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_clock.v:67]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (21#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCTRL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:661]
+INFO: [Synth 8-256] done synthesizing module 'BUFGCTRL' (22#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:661]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (23#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_clock' (24#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_clock.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_reset' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_reset.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_reset' (25#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_reset.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_qpll_reset' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_reset.v:66]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_qpll_reset' (26#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_reset.v:66]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_rate' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_rate.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_rate' (27#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_rate.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_drp' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_drp.v:66]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_drp' (28#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_drp.v:66]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_eq' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_eq.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_rxeq_scan' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_rxeq_scan.v:66]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_rxeq_scan' (29#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_rxeq_scan.v:66]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_eq' (30#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_eq.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gt_common' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_common.v:56]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_qpll_drp' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_drp.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_qpll_drp' (31#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_drp.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_qpll_wrapper' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_wrapper.v:67]
+INFO: [Synth 8-638] synthesizing module 'GTXE2_COMMON' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:11199]
+INFO: [Synth 8-256] done synthesizing module 'GTXE2_COMMON' (32#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:11199]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gtp_cpllpd_ovrd' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gtp_cpllpd_ovrd.v:54]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gtp_cpllpd_ovrd' (33#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gtp_cpllpd_ovrd.v:54]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_qpll_wrapper' (34#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_qpll_wrapper.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gt_common' (35#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_common.v:56]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_user' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_user.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_user' (36#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_user.v:67]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_pipe_sync' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_sync.v:71]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_sync' (37#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_sync.v:71]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gt_wrapper' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_wrapper.v:67]
+INFO: [Synth 8-638] synthesizing module 'GTXE2_CHANNEL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:10526]
+INFO: [Synth 8-256] done synthesizing module 'GTXE2_CHANNEL' (38#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:10526]
+INFO: [Synth 8-638] synthesizing module 'PCIeGen2x8If128_gtx_cpllpd_ovrd' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gtx_cpllpd_ovrd.v:54]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gtx_cpllpd_ovrd' (39#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gtx_cpllpd_ovrd.v:54]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gt_wrapper' (40#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_wrapper.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pipe_wrapper' (41#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pipe_wrapper.v:156]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_gt_top' (42#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_gt_top.v:62]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_core_top' (43#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_core_top.v:65]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128_pcie2_top' (44#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/source/PCIeGen2x8If128_pcie2_top.v:59]
+INFO: [Synth 8-256] done synthesizing module 'PCIeGen2x8If128' (45#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/PCIeGen2x8If128/ip/PCIeGen2x8If128/synth/PCIeGen2x8If128.v:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1199.008 ; gain = 264.562 ; free physical = 817 ; free virtual = 8699
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1199.008 ; gain = 264.562 ; free physical = 817 ; free virtual = 8699
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1563.121 ; gain = 0.004 ; free physical = 455 ; free virtual = 8381
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1563.121 ; gain = 628.676 ; free physical = 454 ; free virtual = 8381
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1563.121 ; gain = 628.676 ; free physical = 454 ; free virtual = 8381
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1563.121 ; gain = 628.676 ; free physical = 454 ; free virtual = 8381
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1563.121 ; gain = 628.676 ; free physical = 437 ; free virtual = 8363
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1563.125 ; gain = 628.680 ; free physical = 419 ; free virtual = 8350
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 1626.117 ; gain = 691.672 ; free physical = 314 ; free virtual = 8252
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1672.141 ; gain = 737.695 ; free physical = 263 ; free virtual = 8201
+Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 1722.219 ; gain = 787.773 ; free physical = 211 ; free virtual = 8149
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:02:10 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 211 ; free virtual = 8149
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:10 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 211 ; free virtual = 8149
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 157 ; free virtual = 8110
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 135 ; free virtual = 8090
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 158 ; free virtual = 8112
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 158 ; free virtual = 8112
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     5|
+|2     |BUFGCTRL      |     1|
+|3     |CARRY4        |   102|
+|4     |GTXE2_CHANNEL |     8|
+|5     |GTXE2_COMMON  |     2|
+|6     |LUT1          |   408|
+|7     |LUT2          |   412|
+|8     |LUT3          |   693|
+|9     |LUT4          |   409|
+|10    |LUT5          |  1186|
+|11    |LUT6          |  1123|
+|12    |MMCME2_ADV    |     1|
+|13    |MUXF7         |   112|
+|14    |MUXF8         |     8|
+|15    |PCIE_2_1      |     1|
+|16    |RAMB36E1      |     4|
+|17    |SRL16E        |     6|
+|18    |SRLC32E       |    56|
+|19    |FDCE          |     9|
+|20    |FDPE          |     2|
+|21    |FDRE          |  5781|
+|22    |FDSE          |   159|
++------+--------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 1722.223 ; gain = 787.777 ; free physical = 158 ; free virtual = 8112
+create_generated_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2168.590 ; gain = 446.363 ; free physical = 156 ; free virtual = 7637
+synth_design: Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 2169.590 ; gain = 1146.641 ; free physical = 123 ; free virtual = 7580

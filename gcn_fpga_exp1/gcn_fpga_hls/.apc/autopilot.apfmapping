@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mat_mult.cpp" path="/home/yuzou/gcn_fpga_exp1/gcn_fpga_hls/src/mat_mult.cpp"/>
+    <originFiles name="top.cpp" path="/home/yuzou/gcn_fpga_exp1/gcn_fpga_hls/src/top.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="top_tb.cpp" path="/home/yuzou/gcn_fpga_exp1/gcn_fpga_hls/src/top_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

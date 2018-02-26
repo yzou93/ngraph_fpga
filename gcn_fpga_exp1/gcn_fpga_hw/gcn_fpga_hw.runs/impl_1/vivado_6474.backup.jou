@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Feb 20 19:49:49 2018
+# Process ID: 6474
+# Current directory: /home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/impl_1
+# Command line: vivado -log KC705_Gen2x8If128.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source KC705_Gen2x8If128.tcl -notrace
+# Log file: /home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/impl_1/KC705_Gen2x8If128.vdi
+# Journal file: /home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source KC705_Gen2x8If128.tcl -notrace

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/wt_q0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:16.234-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'top/wt_ce0' to 0." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:16.196-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/wt_ce0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:16.168-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'top/wt_address0' to 0." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:16.158-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/wt_address0' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:16.136-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'DATAFLOW' cannot be applied: Label 'gather_outer' does not exist in function 'top'. " projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.180-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'DATAFLOW' cannot be applied: Label 'scatter_outer' does not exist in function 'top'. " projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.158-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Function 'node_load' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.126-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Function 'node_store' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.111-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Label 'clear_inner' does not exist in function 'top'. " projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.092-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.081-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.072-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.062-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.054-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.045-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'main' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.034-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'INTERFACE' cannot be applied: Function 'edge_proc' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:12.013-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'INTERFACE' cannot be applied: Function 'edge_proc' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:11.993-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'node_load' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:11.978-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'top' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:11.968-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'STREAM' cannot be applied: Function 'top' does not exist in any synthesis source file." projectName="gcn_fpga_hls" solutionName="solution1" date="2018-02-21T04:31:11.916-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,301 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Wed Feb 21 04:32:54 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802210333) to (Rev. 1802210431)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Wed Feb 21 03:35:07 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802210326) to (Rev. 1802210333)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'procUnit'. These changes may impact your design.
+
+
+-Upgraded port 'wt_address0' width 15 differs from original width 16
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Wed Feb 21 03:30:20 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802202138) to (Rev. 1802210326)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'procUnit'.
+
+
+-Upgrade has removed interface 'msg_in_strm_V'
+
+-Upgrade has removed interface 'msg_out_strm_V'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'procUnit'. These changes may impact your design.
+
+
+-Upgraded port 'edge_strm_V_dst_V_dout' width 12 differs from original width 15
+
+-Upgraded port 'edge_strm_V_src_V_dout' width 12 differs from original width 15
+
+-Upgrade has removed port 'msg_in_strm_V_dout'
+
+-Upgrade has removed port 'msg_in_strm_V_empty_n'
+
+-Upgrade has removed port 'msg_in_strm_V_read'
+
+-Upgrade has removed port 'msg_out_strm_V_din'
+
+-Upgrade has removed port 'msg_out_strm_V_full_n'
+
+-Upgrade has removed port 'msg_out_strm_V_write'
+
+-Upgraded port 'wt_address0' width 16 differs from original width 13
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Feb 20 21:41:53 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802201938) to (Rev. 1802202138)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'procUnit'. These changes may impact your design.
+
+
+-Upgraded port 'edge_strm_V_dst_V_dout' width 15 differs from original width 12
+
+-Upgraded port 'edge_strm_V_src_V_dout' width 15 differs from original width 12
+
+-Upgraded port 'wt_address0' width 13 differs from original width 16
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Feb 20 19:39:41 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802201712) to (Rev. 1802201938)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'procUnit'. These changes may impact your design.
+
+
+-Upgraded port 'wt_address0' width 16 differs from original width 15
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Feb 20 17:14:23 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802201639) to (Rev. 1802201712)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Feb 20 16:40:39 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802200733) to (Rev. 1802201639)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Feb 20 07:35:14 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802192249) to (Rev. 1802200733)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Mon Feb 19 22:53:38 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802192058) to (Rev. 1802192249)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Mon Feb 19 20:59:54 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'procUnit'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of procUnit (xilinx.com:hls:top:1.0) from (Rev. 1802192037) to (Rev. 1802192058)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Mon Feb 19 20:51:40 2018
+| Host         : T3400 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PCIeGen2x8If128'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PCIeGen2x8If128 from xilinx.com:ip:pcie_7x:3.2 (Rev. 1) to xilinx.com:ip:pcie_7x:3.3 (Rev. 3)
+

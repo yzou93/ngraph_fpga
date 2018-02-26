@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="47000fs"></ZoomStartTime>
+      <ZoomEndTime time="58401fs"></ZoomEndTime>
+      <Cursor1Time time="47000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="482"></NameColumnWidth>
+      <ValueColumnWidth column_width="139"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="chnl_user_app/perf_measure/edge_mon/clk_counter">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">chnl_user_app/perf_measure/edge_mon/clk_counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="chnl_user_app/perf_measure/edge_mon/monitor_counter">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">chnl_user_app/perf_measure/edge_mon/monitor_counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">monitor_counter[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="chnl_user_app/perf_measure/node_mon/clk_counter">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">chnl_user_app/perf_measure/node_mon/clk_counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="chnl_user_app/perf_measure/node_mon/monitor_counter">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">chnl_user_app/perf_measure/node_mon/monitor_counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">monitor_counter[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

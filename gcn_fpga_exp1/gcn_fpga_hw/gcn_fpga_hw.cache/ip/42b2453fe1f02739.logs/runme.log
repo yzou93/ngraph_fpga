@@ -1,0 +1,842 @@
+
+*** Running vivado
+    with args -log procUnit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source procUnit.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source procUnit.tcl -notrace
+Command: synth_design -top procUnit -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4355 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1121.531 ; gain = 187.090 ; free physical = 667 ; free virtual = 8350
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'procUnit' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/synth/procUnit.v:57]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top.v:12]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top.v:104]
+INFO: [Synth 8-638] synthesizing module 'top_node_bram' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_node_bram.v:46]
+INFO: [Synth 8-638] synthesizing module 'top_node_bram_ram' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_node_bram.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_node_bram.v:22]
+INFO: [Synth 8-256] done synthesizing module 'top_node_bram_ram' (1#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_node_bram.v:9]
+INFO: [Synth 8-256] done synthesizing module 'top_node_bram' (2#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_node_bram.v:46]
+INFO: [Synth 8-638] synthesizing module 'dataflow_parent_loop_2' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_parent_loop_2.v:10]
+INFO: [Synth 8-638] synthesizing module 'dataflow_in_loop_gat' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_gat.v:10]
+INFO: [Synth 8-638] synthesizing module 'clear_outer_proc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:59]
+INFO: [Synth 8-638] synthesizing module 'top_mac_muladd_10fYi' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10fYi.v:52]
+INFO: [Synth 8-638] synthesizing module 'top_mac_muladd_10fYi_DSP48_1' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10fYi.v:10]
+INFO: [Synth 8-256] done synthesizing module 'top_mac_muladd_10fYi_DSP48_1' (3#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10fYi.v:10]
+INFO: [Synth 8-256] done synthesizing module 'top_mac_muladd_10fYi' (4#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10fYi.v:52]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:320]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:346]
+INFO: [Synth 8-256] done synthesizing module 'clear_outer_proc' (5#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'gather_inner_proc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/gather_inner_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/gather_inner_proc.v:67]
+INFO: [Synth 8-638] synthesizing module 'msg_proc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/msg_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/msg_proc.v:89]
+INFO: [Synth 8-638] synthesizing module 'top_fadd_32ns_32ng8j' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_fadd_32ns_32ng8j.v:11]
+INFO: [Synth 8-638] synthesizing module 'top_ap_fadd_6_full_dsp_32' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_fadd_6_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_fadd_6_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'top_ap_fadd_6_full_dsp_32' (23#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_fadd_6_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'top_fadd_32ns_32ng8j' (24#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_fadd_32ns_32ng8j.v:11]
+INFO: [Synth 8-638] synthesizing module 'top_mul_10ns_9ns_hbi' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_hbi.v:35]
+INFO: [Synth 8-638] synthesizing module 'top_mul_10ns_9ns_hbi_MulnS_1' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'top_mul_10ns_9ns_hbi_MulnS_1' (25#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'top_mul_10ns_9ns_hbi' (26#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_hbi.v:35]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/msg_proc.v:455]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/msg_proc.v:465]
+INFO: [Synth 8-256] done synthesizing module 'msg_proc' (27#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/msg_proc.v:10]
+INFO: [Synth 8-256] done synthesizing module 'gather_inner_proc' (28#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/gather_inner_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'node_store' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:63]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:362]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:388]
+INFO: [Synth 8-256] done synthesizing module 'node_store' (29#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:10]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_in_loop_gat' (30#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_gat.v:10]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_parent_loop_2' (31#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_parent_loop_2.v:10]
+INFO: [Synth 8-638] synthesizing module 'dataflow_parent_loop_1' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_parent_loop_1.v:10]
+INFO: [Synth 8-638] synthesizing module 'dataflow_in_loop_sca' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_sca.v:10]
+INFO: [Synth 8-638] synthesizing module 'node_load' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:66]
+INFO: [Synth 8-638] synthesizing module 'top_mac_muladd_10bkb' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10bkb.v:52]
+INFO: [Synth 8-638] synthesizing module 'top_mac_muladd_10bkb_DSP48_0' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10bkb.v:10]
+INFO: [Synth 8-256] done synthesizing module 'top_mac_muladd_10bkb_DSP48_0' (32#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10bkb.v:10]
+INFO: [Synth 8-256] done synthesizing module 'top_mac_muladd_10bkb' (33#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mac_muladd_10bkb.v:52]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:359]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:385]
+INFO: [Synth 8-256] done synthesizing module 'node_load' (34#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:10]
+INFO: [Synth 8-638] synthesizing module 'scatter_inner_proc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/scatter_inner_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/scatter_inner_proc.v:84]
+INFO: [Synth 8-638] synthesizing module 'edge_proc' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc.v:95]
+INFO: [Synth 8-638] synthesizing module 'edge_proc_res' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc_res.v:46]
+INFO: [Synth 8-638] synthesizing module 'edge_proc_res_ram' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc_res.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc_res.v:22]
+INFO: [Synth 8-256] done synthesizing module 'edge_proc_res_ram' (35#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc_res.v:9]
+INFO: [Synth 8-256] done synthesizing module 'edge_proc_res' (36#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc_res.v:46]
+INFO: [Synth 8-638] synthesizing module 'mat_mult' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/mat_mult.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/mat_mult.v:63]
+INFO: [Synth 8-638] synthesizing module 'top_mul_10ns_9ns_cud' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_cud.v:35]
+INFO: [Synth 8-638] synthesizing module 'top_mul_10ns_9ns_cud_MulnS_0' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'top_mul_10ns_9ns_cud_MulnS_0' (37#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'top_mul_10ns_9ns_cud' (38#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_mul_10ns_9ns_cud.v:35]
+INFO: [Synth 8-256] done synthesizing module 'mat_mult' (39#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/mat_mult.v:10]
+INFO: [Synth 8-638] synthesizing module 'top_uitofp_32ns_3dEe' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_uitofp_32ns_3dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'top_ap_uitofp_4_no_dsp_32' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_uitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_uitofp_4_no_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'top_ap_uitofp_4_no_dsp_32' (48#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/ip/top_ap_uitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'top_uitofp_32ns_3dEe' (49#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top_uitofp_32ns_3dEe.v:11]
+INFO: [Synth 8-256] done synthesizing module 'edge_proc' (50#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc.v:10]
+INFO: [Synth 8-256] done synthesizing module 'scatter_inner_proc' (51#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/scatter_inner_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'dataflow_in_loop_eOg' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'dataflow_in_loop_eOg_memcore' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg_memcore.v:66]
+INFO: [Synth 8-638] synthesizing module 'dataflow_in_loop_eOg_memcore_ram' [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg_memcore.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg_memcore.v:27]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_in_loop_eOg_memcore_ram' (52#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg_memcore.v:9]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_in_loop_eOg_memcore' (53#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg_memcore.v:66]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_in_loop_eOg' (54#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_eOg.v:11]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_in_loop_sca' (55#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_in_loop_sca.v:10]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_parent_loop_1' (56#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/dataflow_parent_loop_1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'top' (57#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/top.v:12]
+INFO: [Synth 8-256] done synthesizing module 'procUnit' (58#1) [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/synth/procUnit.v:57]
+WARNING: [Synth 8-3331] design dataflow_in_loop_eOg_memcore has unconnected port reset
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized218 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized218 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized218 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized216 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized216 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized216 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized214 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized214 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized214 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized212 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized212 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized212 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized212 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized212 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized210 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized210 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized210 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized210 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized210 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized208 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized208 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized208 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized152 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized152 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized152 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized152 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized152 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized5 has unconnected port B[63]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized135 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized135 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized135 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized274 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized274 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized274 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized278 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized278 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized278 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized278 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized278 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized276 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized276 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized276 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[62]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[61]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[60]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[59]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[58]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[57]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[56]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[55]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[54]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[53]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[52]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[51]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[50]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[49]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[48]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[47]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[46]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[45]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[44]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[43]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[42]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[41]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[40]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[39]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[38]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[37]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[36]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[35]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[34]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[33]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[32]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[31]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1610.160 ; gain = 675.719 ; free physical = 159 ; free virtual = 7687
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1610.160 ; gain = 675.719 ; free physical = 135 ; free virtual = 7675
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 356 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/constraints/top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/constraints/top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/procUnit_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/procUnit_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  FDE => FDRE: 19 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1642.172 ; gain = 0.000 ; free physical = 138 ; free virtual = 7548
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.172 ; gain = 707.730 ; free physical = 167 ; free virtual = 7466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.172 ; gain = 707.730 ; free physical = 167 ; free virtual = 7466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1642.172 ; gain = 707.730 ; free physical = 167 ; free virtual = 7466
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_s_reg_188_reg' and it is trimmed from '19' to '18' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/clear_outer_proc.v:233]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_94_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_112_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_252_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_63_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_3_reg_205_reg' and it is trimmed from '19' to '18' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_store.v:253]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_111_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_129_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ap_ready" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_5_reg_204_reg' and it is trimmed from '19' to '18' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/node_load.v:242]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_110_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_128_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_s_reg_86_reg' and it is trimmed from '19' to '18' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/mat_mult.v:115]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_2_fu_217_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_fu_227_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond6_i_i_fu_79_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ap_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1642.172 ; gain = 707.730 ; free physical = 143 ; free virtual = 7383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'dataflow_in_loop_gat_U0/gather_inner_proc_U0/tmp_reg_83_reg' and it is trimmed from '64' to '32' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/gather_inner_proc.v:108]
+INFO: [Synth 8-5546] ROM "dataflow_in_loop_gat_U0/clear_outer_proc_U0/exitcond_flatten_fu_94_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dataflow_in_loop_gat_U0/node_store_U0/exitcond_flatten_fu_111_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/tmp_src_V_reg_257_reg' and it is trimmed from '15' to '9' bits. [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/hdl/verilog/edge_proc.v:181]
+INFO: [Synth 8-5546] ROM "dataflow_in_loop_sca_U0/node_load_U0/exitcond_flatten_fu_110_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dataflow_in_loop_sca_U0/node_load_U0/exitcond2_fu_128_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-5730] RAM grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_bram_U/dataflow_in_loop_eOg_memcore_U/dataflow_in_loop_eOg_memcore_ram_U/ram_reg got removed due to cross hierarchy optimization. 
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[10]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[11]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[12]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[13]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[14]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[15]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[16]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[17]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[18] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[0]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[1]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[2]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[3]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[4]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[5]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[6]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[7]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[9] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[10]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[11]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[12]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[13]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[14]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[15]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[16]' (FDRE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/ap_done_reg_reg' (FDCE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/ap_done_reg_reg'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/ap_done_reg_reg' (FDCE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/gather_inner_proc_U0/ap_done_reg_reg'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[0]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[1]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[2]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[3]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[4]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[5]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[6]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[7]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[8]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[9]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[10]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[11]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[12]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[13]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[14]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[15]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[16]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[17]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[18]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[19]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[20]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[21]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[22]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[23]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[24]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[25]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[26]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[27]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[28]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[29]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[30]' (FDE) to 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/grp_mat_mult_fu_164/node_bram_load_reg_96_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/ap_done_reg_reg' (FDCE) to 'inst/grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/gather_inner_proc_U0/ap_done_reg_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/gather_inner_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__63' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__31' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__64' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__32' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__0' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__65' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__33' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__1' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__66' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__34' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__2' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__67' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__35' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__3' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__68' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__36' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__4' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__69' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__37' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__5' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__70' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__38' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__6' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__71' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__39' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__7' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__72' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__40' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__8' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__73' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__41' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__9' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__74' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__42' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__10' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__75' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__43' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__11' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__30'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__76' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Synth 8-3886] merging instance 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__44' (FDE) to 'inst/i_4_0/node_bram_U/top_node_bram_ram_U/ram_reg_mux_sel__94'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/top_uitofp_32ns_3dEe_U8/top_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/grp_edge_proc_fu_61/tmp_7_reg_280_reg[31] )
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/exitcond_flatten_reg_159_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/ap_pipeline_reg_pp0_iter1_exitcond_flatten_reg_159_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/ap_pipeline_reg_pp0_iter2_exitcond_flatten_reg_159_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/col_reg_83_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/col_reg_83_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/col_reg_83_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/col_reg_83_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/clear_outer_proc_U0/col_reg_83_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/a_reg_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_2_fu_56/dataflow_in_loop_gat_U0/node_store_U0/top_mac_muladd_10fYi_x_U46/top_mac_muladd_10fYi_DSP48_1_U/b_reg_reg[9]) is unused and will be removed from module top.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[63]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[62]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[61]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[60]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[59]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[58]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[57]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[56]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[55]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[53]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[51]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[50]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[49]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[48]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[47]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[46]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[45]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[44]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[43]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[42]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[41]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[40]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[39]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[38]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[37]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[36]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[35]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[34]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[33]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[32]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[31]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[30]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[29]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/node_load_U0/col_reg_99_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grp_dataflow_parent_loop_1_fu_67/dataflow_in_loop_sca_U0/scatter_inner_proc_U0/tmp_reg_99_reg[5]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 133 ; free virtual = 7328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 166 ; free virtual = 7350
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 136 ; free virtual = 7318
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_16 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_17 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_18 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_19 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_20 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_21 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_22 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_23 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_24 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_25 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_26 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_27 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_28 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_29 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_30 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_1_31 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_16 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_17 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_18 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_19 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_20 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_21 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_22 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_23 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_24 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_25 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_26 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_27 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_28 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_29 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_30 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_3_31 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_16 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_17 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_18 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_19 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_20 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_21 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_22 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_23 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_24 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_25 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_26 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_27 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_28 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_29 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_30 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_5_31 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/node_bram_U/top_node_bram_ram_U/ram_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    38|
+|2     |DSP48E1    |     1|
+|3     |DSP48E1_1  |     1|
+|4     |DSP48E1_3  |     1|
+|5     |LUT1       |   181|
+|6     |LUT2       |   280|
+|7     |LUT3       |   159|
+|8     |LUT4       |   186|
+|9     |LUT5       |   175|
+|10    |LUT6       |   359|
+|11    |MUXCY      |   227|
+|12    |MUXF7      |     6|
+|13    |RAM16X1S   |     1|
+|14    |RAMB36E1   |   128|
+|15    |RAMB36E1_1 |   128|
+|16    |SRL16E     |     3|
+|17    |XORCY      |   105|
+|18    |FDCE       |   104|
+|19    |FDE        |    19|
+|20    |FDPE       |    10|
+|21    |FDRE       |  1110|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 503 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1642.176 ; gain = 563.633 ; free physical = 122 ; free virtual = 7300
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1642.176 ; gain = 707.734 ; free physical = 122 ; free virtual = 7300
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 649 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/constraints/top_ooc.xdc] for cell 'inst'
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/constraints/top_ooc.xdc:6]
+Finished Parsing XDC File [/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.srcs/sources_1/ip/procUnit/constraints/top_ooc.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 79 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 59 instances
+  FDE => FDRE: 19 instances
+  RAM16X1S => RAM32X1S (RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+426 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1642.176 ; gain = 616.230 ; free physical = 222 ; free virtual = 7292
+INFO: [Common 17-1381] The checkpoint '/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/procUnit_synth_1/procUnit.dcp' has been generated.

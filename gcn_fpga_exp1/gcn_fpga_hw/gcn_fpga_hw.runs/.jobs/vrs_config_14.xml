@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="c_strm_synth_1" LaunchDir="/home/yuzou/gcn_fpga_exp1/gcn_fpga_hw/gcn_fpga_hw.runs/c_strm_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
